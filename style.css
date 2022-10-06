@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-size: 18px;
+    font-family:'Outfit', sans-serif;
+    min-height: calc(100vh - 0.1px);
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5 rem;
+}
+
+
+img {
+    max-width: 100%;
+  }
+
+.container {
+    max-width: 350px;
+    height: auto;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    
+
+}
+
+article:first-child img {
+    border-radius: .5rem;
+}
+
+.container h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.container h1:hover {
+    color: hsla(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.container .main-image {
+    position: relative;
+    margin-bottom: .75rem;
+    border-radius: 10px;
+    
+}
+
+.container .main-image div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: .5rem;
+}
+
+.container .main-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+  
+.container .main-image div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+article p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin:15px 0;
+}
+
+.container .icon {
+    margin-bottom: 30px;
+   
+}
+
+.icon li:nth-child(2) {
+ color: hsl(178, 100%, 50%);
+ margin-left: 5px;
+}
+
+.icon li:nth-child(3) {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.icon li:nth-child(4) {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.container .wrap__avatar {
+    border-top: 1px solid hsl(215, 51%, 70%);
+    margin-top: 20px;
+}
+
+.container .avatar{
+   max-width: 35px;
+   max-height: 35px;
+   border: 1.5px solid hsl(0, 0%, 100%);
+   border-radius: 50px;
+   margin-right: 20px;
+}
+
+.first-item {
+    color: hsl(215, 51%, 70%);
+    margin-right: 5px;
+    font-weight: 300;
+}
+
+.last-item {
+    color: hsl(0, 0%, 100%);
+}
+
+.last-item:hover{
+    color:  hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    color: hsl(0, 0%, 100%);
+}
